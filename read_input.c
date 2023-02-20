@@ -8,7 +8,7 @@ char *read_input()
 	char *command = NULL;
 	size_t len = 0;
 
-	printf("$ ")
+	printf("$ ");
 	getline(&command, &len, stdin);
 	return (command);
 }

@@ -10,7 +10,7 @@ char **parse_command(char *command)
 	char *stkn;
 	char **arr;
 
-	stkn = strtok(command, " \n")
+	stkn = strtok(command, " \n");
 	arr = malloc(sizeof(char *) * 32);
 
 	arr[0] = stkn;
