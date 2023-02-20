@@ -7,7 +7,7 @@
 void run_execute(char **arr)
 {
 	execve(arr[0], arr, NULL);
-	perror("execve failed");
+	perror(arr[0]);
 	exit(1);
 }
 
