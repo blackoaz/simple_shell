@@ -8,5 +8,10 @@
 #include <string.h>
 #include <sys/wait.h>
 
-int main();
+int main(void);
+char *read_input();
+char **parse_command(char *command);
+pid_t fork_process(void);
+void run_execute(char **arr);
+
 #endif
